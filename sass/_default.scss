@@ -15,3 +15,29 @@ body {
 a {
     color: $white;
 }
+
+%font-alata {
+    font-family: 'Alata', sans-serif;
+}
+
+%font-josefinSans {
+    font-family: 'Josefin sans' sans-serif;
+}
+
+%flex {
+    display: flex;
+
+    &-flex-d_column {
+        flex-direction: column;
+    }
+
+    &-jc_center-ai_center {
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-jc_spacebetween-ai-center {
+        align-items: center;
+        justify-content: space-between;
+    }
+}
