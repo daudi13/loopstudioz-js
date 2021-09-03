@@ -18,7 +18,21 @@
     }
 
     &__container {
+        @extend %flex, %flex-flex-d_column, %flex-jc_spacebetween-ai-center;
+    }
 
+    &__nav {
+        @extend %flex,
+        %flex-jc_spacebetween-ai-center;
+        width: 100%;
+        z-index: 501;
+        position: relative;
+        max-height: 3.125rem;
+
+        @include breakpoint-up (desktop) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 }
 
