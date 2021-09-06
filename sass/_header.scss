@@ -30,7 +30,7 @@
         max-height: 3.125rem;
 
         @include breakpoint-up (desktop) {
-            flex-direction: row;
+            
             justify-content: space-between;
         }
     }
