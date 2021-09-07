@@ -49,5 +49,12 @@
         }
     }
 
+    &__menu {
+        width: 1.5rem;
+        height: 1.20rem;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
 }
 

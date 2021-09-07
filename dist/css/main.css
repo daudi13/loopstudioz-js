@@ -93,4 +93,16 @@ a {
 .mainHeader__logo img {
   width: 100%;
 }
+
+.mainHeader__menu {
+  width: 1.5rem;
+  height: 1.20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=main.css.map */
