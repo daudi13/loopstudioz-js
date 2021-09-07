@@ -34,5 +34,20 @@
             justify-content: space-between;
         }
     }
+
+    &__logo {
+        max-width: 48%;
+        width: 15.625rem;
+
+        @include breakpoint-up(desktop) {
+            width: unset;
+            max-width: 10rem;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
 }
 

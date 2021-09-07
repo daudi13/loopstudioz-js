@@ -77,4 +77,20 @@ a {
             justify-content: space-between;
   }
 }
+
+.mainHeader__logo {
+  max-width: 48%;
+  width: 15.625rem;
+}
+
+@media (min-width: 64rem) {
+  .mainHeader__logo {
+    width: unset;
+    max-width: 10rem;
+  }
+}
+
+.mainHeader__logo img {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
