@@ -65,6 +65,12 @@
             transition: all .2 ease-in-out;
 
             $transformOrigin: (1: .125rem, 2: center, 3: 0rem);
+
+            @for $i from 1 through length($transformOrigin) {
+                &:nth-child(#{$i}) {
+                transform-origin: left map-get($transformOrigin, $i);
+                }
+            }
         }
     }
 }

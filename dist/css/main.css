@@ -120,4 +120,19 @@ a {
   -webkit-transition: all .2 ease-in-out;
   transition: all .2 ease-in-out;
 }
+
+.mainHeader__menu > *:nth-child(1) {
+  -webkit-transform-origin: left 0.125rem;
+          transform-origin: left 0.125rem;
+}
+
+.mainHeader__menu > *:nth-child(2) {
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+.mainHeader__menu > *:nth-child(3) {
+  -webkit-transform-origin: left 0rem;
+          transform-origin: left 0rem;
+}
 /*# sourceMappingURL=main.css.map */
