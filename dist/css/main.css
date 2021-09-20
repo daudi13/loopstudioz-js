@@ -15,6 +15,10 @@ a {
   color: white;
 }
 
+.mainHeader__hero {
+  font-family: 'Josefin sans' sans-serif;
+}
+
 .mainHeader__container, .mainHeader__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,5 +138,31 @@ a {
 .mainHeader__menu > *:nth-child(3) {
   -webkit-transform-origin: left 0rem;
           transform-origin: left 0rem;
+}
+
+.mainHeader__hero {
+  min-width: 100%;
+  padding: 1.5rem;
+  margin-top: 10rem;
+  border: solid 0.125rem white;
+}
+
+@media (min-width: 64rem) {
+  .mainHeader__hero {
+    padding: 2.5rem;
+    max-width: 60%;
+    min-width: unset;
+    margin-top: 8.3rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.mainHeader__hero-text {
+  color: white;
+  font-weight: 300;
+  word-spacing: unset;
+  display: table-caption;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

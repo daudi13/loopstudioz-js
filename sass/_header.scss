@@ -73,6 +73,33 @@
             }
         }
     }
+
+    &__hero {
+        min-width:100%;
+        padding: 1.5rem;
+        margin-top: 10rem;
+        @extend %font-josefinSans;
+        border: solid .125rem $white;
+
+
+        @include breakpoint-up (desktop) {
+            padding: 2.5rem;
+            max-width: 60%;
+            min-width: unset;
+            margin-top: 8.3rem;
+            align-self: flex-start;
+        }
+    }
+
+    &__hero-text {
+        color: $white;
+        font-weight: 300;
+        word-spacing: unset;
+        display: table-caption;
+        text-transform: uppercase;
+
+        
+    }
 }
 
 
