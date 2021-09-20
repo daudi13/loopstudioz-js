@@ -15,7 +15,7 @@ a {
   color: white;
 }
 
-.mainHeader__hero {
+.mainHeader__hero, .mainHeader a {
   font-family: 'Josefin sans' sans-serif;
 }
 
@@ -189,5 +189,76 @@ a {
   visibility: hidden;
   -webkit-animation: fadeOut .4s ease-in-out forwards;
           animation: fadeOut .4s ease-in-out forwards;
+  visibility: hidden;
+  background-color: black;
+}
+
+.mainHeader__links {
+  top: 0rem;
+  width: 100%;
+  height: 100%;
+  margin-top: 10rem;
+  position: absolute;
+}
+
+@media (min-width: 63.9375rem) {
+  .mainHeader__links {
+    visibility: hidden;
+    -webkit-animation: fadeOut .4s ease-in-out forwards;
+            animation: fadeOut .4s ease-in-out forwards;
+  }
+}
+
+@media (min-width: 64rem) {
+  .mainHeader__links {
+    width: unset;
+    height: unset;
+    margin-top: 0;
+    position: relative;
+    min-width: 23.75rem;
+  }
+}
+
+.mainHeader__links-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (min-width: 64rem) {
+  .mainHeader__links-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.mainHeader__links-item {
+  position: relative;
+  padding: .9375rem 0;
+}
+
+.mainHeader a {
+  color: white;
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 64rem) {
+  .mainHeader {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

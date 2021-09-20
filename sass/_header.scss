@@ -115,7 +115,58 @@
         left: 0rem;
         z-index: 500;
         position: fixed;
-        @include fadeOut
+        @include fadeOut;
+        visibility: hidden;
+        background-color: $black;
+    }
+
+    &__links {
+        top: 0rem;
+        width: 100%;
+        height: 100%;
+        margin-top: 10rem;
+        position: absolute;
+
+        @include breakpoint-down (desktop) {
+            @include fadeOut;
+        }
+
+        @include breakpoint-up (desktop) {
+            width: unset;
+            height: unset;
+            margin-top: 0;
+            position: relative;
+            min-width: 23.75rem;
+        }
+    }
+
+    &__links-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        @include breakpoint-up (desktop) {
+            flex-direction: row;
+        }
+    }
+
+    &__links-item {
+        position: relative;
+        padding: .9375rem 0;
+    }
+
+    a {
+        color: $white;
+        font-weight: 100;
+        font-size: 1.5rem;
+        @extend %font-josefinSans;
+        text-transform: uppercase;
+    }
+
+    @include breakpoint-up (desktop) {
+        padding: 0;
+        @include hover-effect;
     }
 }
 
