@@ -33,3 +33,26 @@ $breakpoints-down: (
     visibility: hidden;
     animation: fadeOut .4s ease-in-out forwards;
 }
+
+@mixin hover-effect {
+    position: relative;
+
+
+    &::after {
+        content: '';
+        width: 50%;
+        height: .125rem;
+        left: 50%;
+        bottom: -.4rem;
+        @include fadeOut;
+        position: absolute;
+        background-color: $white;
+        transform: translateX(-50%);
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover::after {
+        bottom: -.7rem;
+        @include fadeIn; 
+    }
+}

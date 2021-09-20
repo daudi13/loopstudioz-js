@@ -259,6 +259,29 @@ a {
 @media (min-width: 64rem) {
   .mainHeader {
     padding: 0;
+    position: relative;
+  }
+  .mainHeader::after {
+    content: '';
+    width: 50%;
+    height: .125rem;
+    left: 50%;
+    bottom: -.4rem;
+    visibility: hidden;
+    -webkit-animation: fadeOut .4s ease-in-out forwards;
+            animation: fadeOut .4s ease-in-out forwards;
+    position: absolute;
+    background-color: white;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .mainHeader:hover::after {
+    bottom: -.7rem;
+    visibility: hidden;
+    -webkit-animation: fadeIn .4s ease-in-out forwards;
+            animation: fadeIn .4s ease-in-out forwards;
   }
 }
 /*# sourceMappingURL=main.css.map */
