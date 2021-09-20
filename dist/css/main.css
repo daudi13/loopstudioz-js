@@ -165,4 +165,29 @@ a {
   display: table-caption;
   text-transform: uppercase;
 }
+
+@media (min-width: 25.6875rem) {
+  .mainHeader__hero-text {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .mainHeader__hero-text {
+    display: block;
+    font-size: 4rem;
+  }
+}
+
+.mainHeader__overlay {
+  width: 100%;
+  height: 100%;
+  top: 0rem;
+  left: 0rem;
+  z-index: 500;
+  position: fixed;
+  visibility: hidden;
+  -webkit-animation: fadeOut .4s ease-in-out forwards;
+          animation: fadeOut .4s ease-in-out forwards;
+}
 /*# sourceMappingURL=main.css.map */
