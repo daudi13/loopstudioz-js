@@ -176,6 +176,39 @@
         }
     }
 
+    @include breakpoint-down (desktop) {
+        &.open {
+            width: 100%;
+
+            .header__menu {
+                & > *:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+
+                & > *:nth-child(2) {
+                    opacity: 0;
+                }
+
+                & > *:nth-child(3) {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            .header__links,
+            .header__overlay {
+                @include fadeIn;
+            }
+        }
+    }
+
+    .header__links, 
+    .header__overlay {
+        @include fadeIn;
+    }
+
+    .header__links {
+        animation-delay: .2s;
+    }
 }
 
 
