@@ -154,20 +154,28 @@
     &__links-item {
         position: relative;
         padding: .9375rem 0;
+
+        a {
+            color: $white;
+            font-weight: 100;
+            font-size: 1.5rem;
+            @extend %font-josefinSans;
+            text-transform: uppercase;
+        }
+
+        @include breakpoint-up (desktop) {
+            padding: 0;
+            @include hover-effect;
+
+            a {
+                font-weight: 700;
+                padding: 0 .3125rem;
+                text-transform: unset;
+                font-size: $bodyFontSize;
+            }
+        }
     }
 
-    a {
-        color: $white;
-        font-weight: 100;
-        font-size: 1.5rem;
-        @extend %font-josefinSans;
-        text-transform: uppercase;
-    }
-
-    @include breakpoint-up (desktop) {
-        padding: 0;
-        @include hover-effect;
-    }
 }
 
 
