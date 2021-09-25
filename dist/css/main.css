@@ -15,7 +15,7 @@ a {
   color: white;
 }
 
-.mainHeader__hero, .mainHeader a {
+.mainHeader__hero, .mainHeader__links-item a {
   font-family: 'Josefin sans' sans-serif;
 }
 
@@ -249,7 +249,7 @@ a {
   padding: .9375rem 0;
 }
 
-.mainHeader a {
+.mainHeader__links-item a {
   color: white;
   font-weight: 100;
   font-size: 1.5rem;
@@ -257,11 +257,11 @@ a {
 }
 
 @media (min-width: 64rem) {
-  .mainHeader {
+  .mainHeader__links-item {
     padding: 0;
     position: relative;
   }
-  .mainHeader::after {
+  .mainHeader__links-item::after {
     content: '';
     width: 50%;
     height: .125rem;
@@ -277,11 +277,80 @@ a {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
   }
-  .mainHeader:hover::after {
+  .mainHeader__links-item:hover::after {
     bottom: -.7rem;
     visibility: hidden;
     -webkit-animation: fadeIn .4s ease-in-out forwards;
             animation: fadeIn .4s ease-in-out forwards;
+  }
+  .mainHeader__links-item a {
+    font-weight: 700;
+    padding: 0 .3125rem;
+    text-transform: unset;
+    font-size: 0.9375rem;
+  }
+}
+
+@media (min-width: 63.9375rem) {
+  .mainHeader.open {
+    width: 100%;
+  }
+  .mainHeader.open .header__menu > *:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .mainHeader.open .header__menu > *:nth-child(2) {
+    opacity: 0;
+  }
+  .mainHeader.open .header__menu > *:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .mainHeader.open .header__links,
+  .mainHeader.open .header__overlay {
+    visibility: hidden;
+    -webkit-animation: fadeIn .4s ease-in-out forwards;
+            animation: fadeIn .4s ease-in-out forwards;
+  }
+}
+
+.mainHeader .header__links,
+.mainHeader .header__overlay {
+  visibility: hidden;
+  -webkit-animation: fadeIn .4s ease-in-out forwards;
+          animation: fadeIn .4s ease-in-out forwards;
+}
+
+.mainHeader .header__links {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.feature {
+  position: relative;
+}
+
+.feature__container {
+  position: relative;
+  background-color: white;
+}
+
+.feature__image {
+  width: 100%;
+  height: 13.125rem;
+  position: relative;
+}
+
+@media (min-width: 48rem) {
+  .feature__image {
+    height: 17.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .feature__image {
+    max-width: 45.625rem;
+    min-height: 31.25rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
